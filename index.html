@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+	    <meta name="apple-mobile-web-app-capable" content="yes">
+	    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+	    <title>ForYoungPeople</title>
+
+	    <link rel="stylesheet" href="css/style.css">
+	    <link rel="stylesheet" href="css/framework.css">
+		<link rel="stylesheet" href="css/font-awesome.css">
+	    <link rel="stylesheet" href="css/animate.css">
+	    <link rel="stylesheet" href="css/framework7.ios.min.css">
+	    <link rel="stylesheet" href="css/myApp.css">
+
+    </head>
+    <body class="dual-sidebar">
+        <div class="views">
+			<div data-page="home" class="view view-main">
+				<div class="pages">
+
+					<div class="page" data-page="splash">
+						<div class="page-content bg-login">
+							<div class="page-content">
+				                <img src="./images/logo.png" class="logo">
+							</div>
+						</div>
+					</div>
+
+					<div class="page overflow-auto cached" data-page="main">
+
+						<div class="page-content">
+							<div class="views">
+								<div class="view view-child">									
+									<div class="gallery-fix"></div> 
+									<div id="header-fixed" class="user-header-fixed bg-topbar">
+										<a class="open-left-sidebar" href="#"><i class="fa fa-navicon"></i></a>
+									    <a id="user-nab-title">Front Page</a>
+									</div>    
+
+									<div class="footer-menu">
+									    <a href="#" class="footer-menu-open">
+									        <i class="fa fa-ellipsis-v"></i>
+									    </a>        
+									    <a href="#" class="footer-menu-close">
+									        <em href="#" class="footer-menu-open-text">Luk menu</em>
+									        <i class="fa fa-times"></i>
+									    </a> 
+									    <a class="footer-menu-item fm-1 btn-home-page">
+									        <em>Hjem</em>
+									        <i class="fa fa-home"></i>
+									    </a>       
+									    <a class="footer-menu-item fm-2 btn-video-page">
+									        <em class="lbl-video">Videos</em>
+									        <i class="fa fa-youtube-play"></i>
+									    </a>
+									    <a class="footer-menu-item fm-3 btn-meditation-page">
+									        <em class="lbl-meditation">Meditaion</em>
+									        <i class="fa fa-volume-up"></i>
+									    </a>              
+									    <a class="footer-menu-item fm-4 btn-note-page">
+									        <em class="lbl-note">Notes</em>
+									        <i class="fa fa-comment-o"></i>
+									    </a> 
+									</div>
+									<div class="menu-background"></div>    
+
+									<div class="all-elements">
+									    <div class="snap-drawers">
+									        <div class="snap-drawer snap-drawer-left">
+									            <div class="sidebar-header">
+									                <img src="./images/logo.png" class="sidebar-logo">
+									            </div>
+									            
+									            <div class="sidebar-divider">
+									            </div>
+									            
+									            <div class="sidebar-menu">
+									                <a class="menu-item close-sidebar btn-video-page">
+									        			<i class="icon fa fa-youtube-play"></i>
+									                    <em class="lbl-video">Video Guide</em>
+									                    <i class="fa fa-angle-right"></i>
+									                </a>                   
+									                <a class="menu-item close-sidebar btn-meditation-page">
+												        <i class="icon fa fa-volume-up"></i>
+									                    <em class="lbl-meditation">Meditation</em>
+									                    <i class="fa fa-angle-right"></i>
+									                </a>  
+									                <a class="menu-item close-sidebar btn-note-page">
+									                    <i class="icon fa fa-comment-o"></i>
+									                    <em class="lbl-note">Note</em>
+									                    <i class="fa fa-angle-right"></i>
+									                </a> 
+									                <a class="menu-item close-sidebar site-link">
+									                    <i class="icon fa fa-external-link"></i>
+									                    <em>Åbenogrolig.dk</em>
+									                    <i class="fa fa-circle"></i>
+									                </a>
+									                <!-- <a class="menu-item close-sidebar btn-profile-page">
+									                    <i class="bg-blue-dark fa fa-user"></i>
+									                    <em>Profile</em>
+									                    <i class="fa fa-angle-right"></i>
+									                </a> -->
+									                
+									                <!-- <a class="menu-item close-sidebar btn-log-out" href="#">
+									                    <i class="bg-red-dark fa fa-share-square-o"></i>
+									                    <em>Log out</em>
+									                    <i class="fa fa-circle"></i>
+									                </a> -->
+									                <a class="menu-item close-sidebar" href="#">
+									                    <i class="icon fa fa-times"></i>
+									                    <em>Luk</em>
+									                    <i class="fa fa-circle"></i>
+									                </a>
+									            </div>
+									        </div>
+									       									        
+									        <div id="content" class="snap-content bg-slider">
+
+										        <div class="pages remove-relation-position"  id="user-scroll-page">
+
+
+										        <!--user main pages-->
+
+
+										        	<div data-page="home" class="page transparent">
+
+											            <div class="content">
+											            	<div class="header-clear-large"></div>
+
+											            	<p id="lbl-front-welcome" class="">Front Page Welcome Label</p>
+
+												            <div class="homepage-slider full-bottom-2 margin-top5p">
+												            	<div class="page-content">
+												                    
+												                    <div class="landing-homepage">
+													                	<ul>  
+																	        <li class="home-menu-item">
+																	            <a>
+																	                <i id="btn-video-page" class="fa fa-youtube-play btn-video-page"></i>
+																	                <em class="font1 lbl-video">Videos</em>
+																	            </a>
+																	        </li>        
+																	        <li class="home-menu-item">
+																	            <a>
+																	                <i id="btn-meditation-page" class="fa fa-volume-up btn-meditation-page"></i>
+																	                <em class="font1 lbl-meditation">Meditation</em>
+																	            </a>
+																	        </li>
+
+															                <div class="clear-both"></div>   
+
+																	        <li class="home-menu-item">
+																	            <a>
+																	                <i id="btn-note-page" class="fa fa-comment-o btn-note-page"></i>
+																	                <em class="font1 lbl-note">Notes</em>
+																	            </a>
+																	        </li> 
+																	        <li class="home-menu-item">
+																	            <a>
+																	                <i class="fa fa-external-link site-link"></i>
+																	                <em class="font1">Åbenogrolig.dk</em>
+																	            </a>
+																	        </li> 
+																	    </ul>   
+													                </div>
+												                </div>   
+												            </div>
+												        </div>
+											        </div>
+
+													<div data-page="video" class="page transparent cached">
+									                	<div class="content">
+									                		<div class="header-clear-large"></div>
+															
+											            	<p id="lbl-video-welcome" class="page-title-font">Video Guide Welcome Label</p>
+
+											                <div id="video-block">
+											                
+											                </div>
+											                
+									                	</div>
+									                </div>
+
+									                <div data-page="meditation" class="page transparent cached">
+									                	<div class="content">
+									                		<div class="header-clear-large"></div>
+
+											            	<p id="lbl-meditation-welcome" class="page-title-font">Meditation Welcome Label</p>
+															
+											                <div id="meditation-block">
+											                
+											                </div>
+											                
+									                	</div>
+									                </div>
+
+									                <div data-page="note" class="page transparent cached">
+									                	<div class="content">
+									                		<div class="header-clear-large"></div>
+
+											            	<p id="lbl-note-welcome" class="page-title-font">Personal Note Welcome Label</p>
+															
+											                <div id="note-block">
+											                	
+											                </div>
+
+											                <div class="decoration"></div>
+
+											                <div class="material-container container add-group-container">
+									                        	<div class="toggle">
+											                        <a href="#" class="toggle-title">Skriv en note<i class="fa fa-plus"></i></a>
+											                        <div class="toggle-content">
+											                            <textarea class="contactTextarea requiredField" id="txt-note"></textarea>
+											                            <a id="btn-add-note" class="pageapp-logoutadmin-button button-small button-blue button-fullscreen">Gem</a>
+											                        </div>
+											                    </div>
+											                </div>
+											                
+									                	</div>
+									                </div>
+
+									                <div data-page="profile" class="page transparent cached"><div class="page-profile">
+									                	<div class="content">
+
+									                		<div class="page-profile-header container-fullscreen">
+									                			<img id="img-page-user-avatar" src="./images/tmpAvatar.png" alt="img">
+									                			<h3 id='lbl-name' class="lbl-user-name">Upload your picture</h3>
+											                    <em id='lbl-address'><i class="fa fa-location-arrow"></i>København, Denmark</em>
+											                    <div class="overlay bg-black"></div>
+											                </div>
+
+
+											                <div class="sidebar-left-small no-bottom">
+									                            <div class="pageapp-signup">    
+															        <div class="pageapp-signup-content">
+															            <div class="unboxed-layout padding-bottom10">
+															                <img src="images/logo.png" class="responsive-image half-bottom profile-logo" alt="img">
+															                <div class="pageapp-signup-field">
+															                    <i class="fa fa-user"></i>
+															                    <input id='txt-name' onfocus="if (this.value=='Username') this.value = ''" onblur="if (this.value=='') this.value = 'Username'" type="text" value="Username">
+															                </div>                    
+															                <div class="pageapp-signup-field">
+															                    <i class="fa fa-envelope-o"></i>
+															                    <input id='txt-email' onfocus="if (this.value=='E-Mail') this.value = ''" onblur="if (this.value=='') this.value = 'E-Mail'" type="email" value="E-Mail">
+															                </div>                    
+															                <div class="pageapp-signup-field">
+															                    <i class="fa fa-phone"></i>
+															                    <input id='txt-phone' onfocus="if (this.value=='123456789') this.value = ''" onblur="if (this.value=='') this.value = '123456789'" type="number" value="123456789">
+															                </div>
+															                <div class="pageapp-signup-field">
+															                    <i class="fa fa-map-marker"></i>
+															                    <input id='txt-address' onfocus="if (this.value=='Address') this.value = ''" onblur="if (this.value=='') this.value = 'Address'" type="text" value="Address">
+															                </div>
+															                <a href="#" class="pageapp-saveprofile-button button-green button-fullscreen">Save</a>
+															            </div>
+															        </div>
+															        <div class="overlay bg-black" style="width: 375px; height: 627px;"></div>
+									                        	</div>
+									                        	<br/>
+											                </div>
+									                	</div>
+									                </div>
+											    </div>	
+
+									        </div>
+									    </div>  
+									      
+									    <a class="back-to-top-badge" id="user-back-to-top-badge"><i class="fa fa-caret-up"></i>Back to top</a>
+									</div>
+								</div>
+							</div>
+
+							
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+        </div>
+
+		<script>window.jQuery || document.write('<script src="js/library/jquery.js"><\/script>')</script>
+ 		<script type="text/javascript" src="js/library/jqueryui.js"></script>
+    	<script type="text/javascript" src="js/library/framework-plugins.js"></script>
+    	<script type="text/javascript" src="js/library/custom.js"></script>
+        <script type="text/javascript" src="js/library/framework7.min.js"></script>
+
+		<script type="text/javascript" src="cordova.js"></script>
+
+        <script type="text/javascript" src="js/myApp.js"></script>
+        <script type="text/javascript" src="js/createComponents.js"></script>
+        <script type="text/javascript" src="js/dataManager.js"></script>
+        <script type="text/javascript" src="js/eventManager.js"></script>
+        <script type="text/javascript" src="js/nabBarManager.js"></script>
+
+    </body>
+</html>
