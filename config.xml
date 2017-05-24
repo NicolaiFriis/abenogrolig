@@ -83,23 +83,23 @@
 		    <preference name="KeepRunning" value="true"/>
         <allow-intent href="market:*" />
         <icon src="icon.png" />
-        
-        <icon platform="android" gap:qualifier="ldpi" src="res/icons/android/icon-36-ldpi.png" />
-        <icon platform="android" gap:qualifier="mdpi" src="res/icons/android/icon-48-mdpi.png" />
-        <icon platform="android" gap:qualifier="hdpi" src="res/icons/android/icon-72-hdpi.png" />
-        <icon platform="android" gap:qualifier="xhdpi" src="res/icons/android/icon-96-xhdpi.png" />
-        <icon platform="android" gap:qualifier="xxhdpi" src="res/icons/android/icon-144-xxhdpi.png" />
-        <icon platform="android" gap:qualifier="xxxhdpi" src="res/icons/android/icon-192-xxxhdpi.png" />
+
+        <icon platform="android" qualifier="ldpi" src="res/icons/android/icon-36-ldpi.png" />
+        <icon platform="android" qualifier="mdpi" src="res/icons/android/icon-48-mdpi.png" />
+        <icon platform="android" qualifier="hdpi" src="res/icons/android/icon-72-hdpi.png" />
+        <icon platform="android" qualifier="xhdpi" src="res/icons/android/icon-96-xhdpi.png" />
+        <icon platform="android" qualifier="xxhdpi" src="res/icons/android/icon-144-xxhdpi.png" />
+        <icon platform="android" qualifier="xxxhdpi" src="res/icons/android/icon-192-xxxhdpi.png" />
 
         <splash src="splash.png" />
 
-        <splash platform="android" gap:qualifier="land-hdpi" src="res/screens/android/screen-hdpi-landscape.png" />
-        <splash platform="android" gap:qualifier="land-ldpi" src="res/screens/android/screen-ldpi-landscape.png" />
-        <splash platform="android" gap:qualifier="land-mdpi" src="res/screens/android/screen-mdpi-landscape.png" />
-        <splash platform="android" gap:qualifier="land-xhdpi" src="res/screens/android/screen-xhdpi-landscape.png" />
-        <splash platform="android" gap:qualifier="port-hdpi" src="res/screens/android/screen-hdpi-portrait.png" />
-        <splash platform="android" gap:qualifier="port-ldpi" src="res/screens/android/screen-ldpi-portrait.png" />
-        <splash platform="android" gap:qualifier="port-mdpi" src="res/screens/android/screen-mdpi-portrait.png" />
-        <splash platform="android" gap:qualifier="port-xhdpi" src="res/screens/android/screen-xhdpi-portrait.png" />
+        <splash platform="android" qualifier="land-hdpi" src="res/screens/android/screen-hdpi-landscape.png" />
+        <splash platform="android" qualifier="land-ldpi" src="res/screens/android/screen-ldpi-landscape.png" />
+        <splash platform="android" qualifier="land-mdpi" src="res/screens/android/screen-mdpi-landscape.png" />
+        <splash platform="android" qualifier="land-xhdpi" src="res/screens/android/screen-xhdpi-landscape.png" />
+        <splash platform="android" qualifier="port-hdpi" src="res/screens/android/screen-hdpi-portrait.png" />
+        <splash platform="android" qualifier="port-ldpi" src="res/screens/android/screen-ldpi-portrait.png" />
+        <splash platform="android" qualifier="port-mdpi" src="res/screens/android/screen-mdpi-portrait.png" />
+        <splash platform="android" qualifier="port-xhdpi" src="res/screens/android/screen-xhdpi-portrait.png" />
     </platform>
 </widget>
