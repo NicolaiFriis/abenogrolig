@@ -79,6 +79,11 @@
         <splash platform="ios" height="2208" width="1242" src="res/screens/ios/screen-iphone-portrait-736h.png" />
         <splash platform="ios" height="1242" width="2208" src="res/screens/ios/screen-iphone-landscape-736h.png" />
     </platform>
+    <config-file platform="ios" parent="UIBackgroundModes" overwrite="true">
+  	   <array>
+    		   <string>audio</string>
+  	   </array>
+    </config-file>
     <platform name="android">
 		    <preference name="KeepRunning" value="true"/>
         <allow-intent href="market:*" />
