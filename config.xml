@@ -9,6 +9,7 @@
     </author>
     <plugin name="cordova-plugin-whitelist" spec="1" />
 	  <plugin name="onesignal-cordova-plugin" spec="2.0.11" />
+	  <plugin name="nl.kingsquare.cordova.background-audio" source="npm" />
     <content src="index.html" />
     <preference name="StatusBarOverlaysWebView" value="true" />
     <preference name="StatusBarBackgroundColor" value="#000000" />
