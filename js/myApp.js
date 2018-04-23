@@ -19,9 +19,9 @@ $(document).ready(function(){
     //localStorage.setItem("phoneNumber", null);
 
     myApp.showIndicator();
-    $.ajax({url: "http://aaor.mijukaland.com/?json=get_posts&post_type=screen",
+    $.ajax({url: "https://c50580.sgvps.net/~anettet4/?json=get_posts&post_type=screen",
         method: 'GET',
-        dataType: 'jsonp', 
+        dataType: 'jsonp',
         success: function(result){
             myApp.hideIndicator();
             if (result["status"] == "ok") {
@@ -30,7 +30,7 @@ $(document).ready(function(){
                 if (JSON.parse(localStorage.getItem('phoneNumber')) != null){
                     var phoneNumber = JSON.parse(localStorage.getItem('phoneNumber'));
                     getPhoneListGroupNmae(phoneNumber);
-                }else{                    
+                }else{
                     showInputDialogue();
                 }
             }else{
@@ -54,14 +54,14 @@ document.addEventListener('deviceready', onDeviceReady, false);
 function onDeviceReady()
 {
   document.addEventListener("resume", function() {}, false);
-    
-  document.addEventListener("pause", function() {}, false); 
-  
+
+  document.addEventListener("pause", function() {}, false);
+
   window.plugins.OneSignal
     .startInit("206a5f60-441b-476c-84bb-a7d2bad7f9ca")
 	.inFocusDisplaying(window.plugins.OneSignal.OSInFocusDisplayOption.Notification)
     .endInit();
-	
+
     g_analytics = navigator.analytics;
     g_analytics.setTrackingId('UA-74952919-1');
     g_analytics.setDispatchInterval(1);
@@ -70,7 +70,7 @@ function onDeviceReady()
         g_deviceType = 'Android';
         g_analytics.enableAdvertisingIdCollection(enableAdSuccess, enableAdError);
     }
-    
+
 	//alert();
 }
 
@@ -85,7 +85,7 @@ $$('.btn-meditation-page').on('click', function(){
     getItems('meditation');
     gotoPage('meditation')
 });
-$$('.btn-note-page').on('click', function(){    
+$$('.btn-note-page').on('click', function(){
     createNotes();
     gotoPage('note')
 });
@@ -93,7 +93,7 @@ $$('.btn-profile-page').on('click', function(){
     gotoPage('profile')
 });
 $$('.site-link').on('click', function(){
-    window.open('http://xn--benogrolig-05a.dk/for-kursister/', '_system', 'location=no');    
+    window.open('http://xn--benogrolig-05a.dk/for-kursister/', '_system', 'location=no');
 })
 
 function gotoPage(pageName)

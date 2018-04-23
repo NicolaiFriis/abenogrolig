@@ -1,4 +1,4 @@
-var URL_SERVER = "http://aaor.mijukaland.com/";
+var URL_SERVER = "https://c50580.sgvps.net/~anettet4/";
 
 var URL_GET_USER = URL_SERVER+"?json=get_posts&post_type=userlist&count=500";
 
@@ -104,10 +104,10 @@ function showInputDialogue()
 			  window.plugins.OneSignal.getIds(function(ids) {
 			  //console.log('getIds: ' + JSON.stringify(ids));
 			  //alert("userId = " + ids.userId + ", pushToken = " + ids.pushToken);
-			  $.ajax({url: "http://aaor.mijukaland.com/cron/set_player.php",
+			  $.ajax({url: "https://c50580.sgvps.net/~anettet4/cron/set_player.php",
 					method: 'POST',
 					data: {'player_id': ids.userId,'phoneNumber': phone_number,},
-					dataType: 'json', 
+					dataType: 'json',
 					success: function(result){},
 					error: function(xhr, textStatus, errorThrown){}
 				});
@@ -124,13 +124,13 @@ function getPhoneListGroupNmae(phoneNumber)
     myApp.showIndicator();
     $.ajax({url: URL_GET_USER,
         method: 'GET',
-        dataType: 'jsonp', 
+        dataType: 'jsonp',
         success: function(result){
             myApp.hideIndicator();
-            if (result["status"] == "ok") 
+            if (result["status"] == "ok")
             {
                 g_currentUser = null;
-                
+
                 for (var i = 0; i < result['count']; i++)
                 {
                     var post = result['posts'][i];
@@ -139,7 +139,7 @@ function getPhoneListGroupNmae(phoneNumber)
                         var phoneNumber = post['custom_fields']['phone_number'][0];
                         var phonelistgroup = post['taxonomy_phonelistgroup'];
 
-                        if (phoneNumber == post['custom_fields']['phone_number'][0]) 
+                        if (phoneNumber == post['custom_fields']['phone_number'][0])
                         {
                             var address = "";
                             var email = "";
@@ -194,7 +194,7 @@ function trackGa(action)
             g_analytics.sendEvent(gName, 'Visit '+action+' page.');
         }
 
-        
+
 
 
         //window.analytics.trackEvent('Category', 'Action', 'Label', Value);
@@ -224,14 +224,14 @@ function trackError(r)
 function getItems(type)
 {
     var tmpURL = '';
-    if (type == 'video') 
+    if (type == 'video')
         tmpURL = URL_VIDEO_GROUP;
     else
         tmpURL = URL_MEDITATION_GROUP;
     myApp.showIndicator();
     $.ajax({url: tmpURL,
         method: 'GET',
-        dataType: 'jsonp', 
+        dataType: 'jsonp',
         success: function(result){
             if (result["status"] == "ok") {
                 if (result["count"] == 0) {
@@ -269,7 +269,7 @@ function getGroupItems(gNames, type)
     }
     $.ajax({url: tmpURL,
         method: 'GET',
-        dataType: 'jsonp', 
+        dataType: 'jsonp',
         success: function(result){
             myApp.hideIndicator();
             if (result["status"] == "ok") {
@@ -314,7 +314,7 @@ function getAuthenticatedURL(url)
 {
 	return url+"&cookie="+g_cookie;
 }
-function validateEmail(email) 
+function validateEmail(email)
 {
     var re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(email);
@@ -341,7 +341,7 @@ function getGenerateAuthCookieNonce()
 	myApp.showIndicator();
 	$.ajax({url: url_cookie,
         method: 'GET',
-        dataType: 'jsonp', 
+        dataType: 'jsonp',
         success: function(result){
        		myApp.hideIndicator();
         	if (result["status"] == "ok") {
@@ -370,7 +370,7 @@ function getCUDNonces()
 	var tmpURL_CreateNonce = getAuthenticatedURL(URL_CREATENONCE);
 	$.ajax({url: tmpURL_CreateNonce,
         method: 'GET',
-        dataType: 'jsonp', 
+        dataType: 'jsonp',
         success: function(result){
         	g_createNonce = result["nonce"];
        },
@@ -384,7 +384,7 @@ function getCUDNonces()
 	var tmpURL_UpdateNonce = getAuthenticatedURL(URL_UPDATENONCE);
 	$.ajax({url: tmpURL_UpdateNonce,
         method: 'GET',
-        dataType: 'jsonp', 
+        dataType: 'jsonp',
         success: function(result){
         	g_updateNonce = result["nonce"];
         },
@@ -398,7 +398,7 @@ function getCUDNonces()
 	var tmpURL_DeleteNonce = getAuthenticatedURL(URL_DELETENONCE);
 	$.ajax({url: tmpURL_DeleteNonce,
         method: 'GET',
-        dataType: 'jsonp', 
+        dataType: 'jsonp',
         success: function(result){
         	g_deleteNonce = result["nonce"];
         },
@@ -415,7 +415,7 @@ function setAvatar(id, permission)
 	var tmpURL = URL_AVATAR+id;
 	$.ajax({url: tmpURL,
         method: 'GET',
-        dataType: 'jsonp', 
+        dataType: 'jsonp',
         success: function(result){
        		myApp.hideIndicator();
         	if (result["status"] == "ok") {
@@ -429,7 +429,7 @@ function setAvatar(id, permission)
                     //var imgAvatar = document.getElementById('img-logo-user-avatar');
                     //imgAvatar.setAttribute('src', "http:"+url);
                 }
-        		
+
         	}else{
         		//myApp.alert("Failed login as admin!", "Failed!");
         	}
@@ -456,7 +456,7 @@ function setAvatar(id, permission)
 
 //     var ft = new FileTransfer();
 //     ft.upload(
-//         imgURI, 
+//         imgURI,
 //         encodeURI(URL_SERVER+'upload-avatars.php'),
 //         function (response) {
 //             myApp.alert('avatar upload success');
@@ -466,5 +466,3 @@ function setAvatar(id, permission)
 //         }
 //     );
 // }
-
-
