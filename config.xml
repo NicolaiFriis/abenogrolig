@@ -11,8 +11,8 @@
 	  <plugin name="onesignal-cordova-plugin" spec="2.0.11" />
 	  <plugin name="nl.kingsquare.cordova.background-audio" source="npm" />
     <content src="index.html" />
-    <preference name="android-minSdkVersion" value="16" />
-    <preference name="android-maxSdkVersion" value="25" />
+    <preference name="android-minSdkVersion" value="26" />
+    <!--<preference name="android-maxSdkVersion" value="25" />-->
     <preference name="StatusBarOverlaysWebView" value="true" />
     <preference name="StatusBarBackgroundColor" value="#000000" />
     <preference name="StatusBarStyle" value="default" />
